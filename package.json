@@ -1,0 +1,20 @@
+{
+  "name": "Educhat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^2.5.1",
+    "emoji-picker-react": "^4.12.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

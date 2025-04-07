@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.context-menu {
+  position: fixed;
+  background: var(--base-100);
+  border: 1px solid var(--base-300);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 5px 0;
+}
+
+.context-menu button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--base-content);
+}
+
+.context-menu button:hover {
+  background-color: var(--base-200);
+}
+
+.selected-message .chat-bubble {
+  @apply ring-2 ring-accent;
+  background: var(--neutral) !important; /* Use a neutral color for selected messages */
+  color: var(--neutral-content) !important;
+}
+
+.selected-message .chat-header,
+.selected-message .text-xs {
+  color: var(--base-content) !important;
+}
+
+.selected-chat {
+  background: var(--neutral) !important;
+  color: var(--neutral-content) !important;
+}
+
+.emoji-picker {
+  --epr-bg-color: var(--base-100) !important;
+  --epr-category-label-bg-color: var(--base-200) !important;
+  --epr-header-overlay-bg-color: var(--base-100) !important;
+  --epr-search-input-bg-color: var(--base-200) !important;
+  --epr-search-input-text-color: var(--base-content) !important;
+  --epr-emoji-variation-picker-bg-color: var(--base-100) !important;
+  --epr-hover-bg-color: var(--base-300) !important;
+  --epr-highlight-color: var(--primary) !important;
+  --epr-text-color: var(--base-content) !important;
+  --epr-border-color: var(--base-300) !important;
+}
